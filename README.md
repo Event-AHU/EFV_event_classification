@@ -33,4 +33,6 @@ Recognizing target objects using an event-based camera draws more and more atten
     test
     CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 test.py --model_name xxx.pkl --batch_size 8
 ## Experimental Results 
-
+<p align="center">
+  <img width="90%" src="https://github.com/Event-AHU/EFV_event_classification/blob/main/figure/ASLtop5TSNE.jpg" alt="feature_vis"/>
+</p> 
