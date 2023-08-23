@@ -51,10 +51,12 @@ Matlab
 ```
     
 ## Training and Testing 
+
     * **train**
     ```
     CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --master_port 1568 --nproc_per_node=1 train.py --epoch 150 --batch_size 8
     ```
+    
     * **test**
     ```
     CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 test.py --model_name xxx.pkl --batch_size 8
