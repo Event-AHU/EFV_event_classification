@@ -65,10 +65,19 @@ Matlab
 </p> 
 
 ## Citation 
-If you think this work contributes to your research, please cite this paper via: 
+If you think this work contributes to your research, please give us a star :star2: and cite this paper via: 
+```
+@misc{yuan2023learning,
+      title={Learning Bottleneck Transformer for Event Image-Voxel Feature Fusion based Classification}, 
+      author={Chengguo Yuan and Yu Jin and Zongzhen Wu and Fanting Wei and Yangzirui Wang and Lan Chen and Xiao Wang},
+      year={2023},
+      eprint={2308.11937},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
-```
+If you have any questions about this work, please leave an issue. 
 
 
 
