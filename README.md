@@ -2,7 +2,7 @@
 [**PRCV-2023**] **Learning Bottleneck Transformer for Event Image-Voxel Feature Fusion based Classification**, Chengguo Yuan, Yu Jin, Zongzhen Wu, Fanting Wei, Yangzirui Wang, Lan Chen, and Xiao Wang. [[Paper]()] 
 
 
-## Abstract 
+## :dart: Abstract 
 Recognizing target objects using an event-based camera draws more and more attention in recent years. Existing works usually represent the event streams into point-cloud, voxel, image, etc, and learn the feature representations using various deep neural networks. Their final results may be limited by the following factors: monotonous modal expressions and the design of the network structure. To address the aforementioned challenges, this paper proposes a novel dual-stream framework for event representation, extraction, and fusion. This framework simultaneously models two common representations: event images and event voxels. By utilizing Transformer and Structured Graph Neural Network (GNN) architectures, spatial information and three-dimensional stereo information can be learned separately. Additionally, a bottleneck Transformer is introduced to facilitate the fusion of the dual-stream information. Extensive experiments demonstrate that our proposed framework achieves state-of-the-art performance on two widely used event-based classification datasets.
 
 
@@ -11,7 +11,7 @@ Recognizing target objects using an event-based camera draws more and more atten
 </p> 
 
 
-## Environment Setting 
+## :construction_worker: Environment Setting 
 ```   
 Python 3.8
 Pytorch 
@@ -29,12 +29,12 @@ pillow
 Matlab
 ```
 
-## Framework 
+## :triangular_flag_on_post: Framework 
 <p align="center">
   <img width="90%" src="https://github.com/Event-AHU/EFV_event_classification/blob/main/figure/frameworkV4.jpg" alt="feature_vis"/>
 </p> 
 
-## Dataset Download and Pre-processing 
+## :floppy_disk: Dataset Download and Pre-processing 
 ```
     ASL-DVS:https: //www.dropbox.com/sh/ibq0jsicatn7l6r/AACNrNELV56rs1YInMWUs9CAa?dl=0
     N-MNIST: https://www.garrickorchard.com/datasets/n-mnist
@@ -50,7 +50,7 @@ Matlab
     python generate_graph/voxel2graph.py
 ```
     
-## Training and Testing 
+## :hourglass: Training and Testing 
 ```
     train
     CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --master_port 1568 --nproc_per_node=1 train.py --epoch 150 --batch_size 8
@@ -59,7 +59,7 @@ Matlab
     CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 test.py --model_name xxx.pkl --batch_size 8
 ```
     
-## Experimental Results 
+## :chart_with_upwards_trend: Experimental Results 
 <p align="center">
   <img width="90%" src="https://github.com/Event-AHU/EFV_event_classification/blob/main/figure/ASLtop5TSNE.jpg" alt="feature_vis"/>
 </p> 
