@@ -64,7 +64,7 @@ Matlab
   <img width="90%" src="https://github.com/Event-AHU/EFV_event_classification/blob/main/figure/ASLtop5TSNE.jpg" alt="feature_vis"/>
 </p> 
 
-## Citation 
+## :newspaper: Citation 
 If you think this work contributes to your research, please give us a star :star2: and cite this paper via: 
 ```
 @misc{yuan2023learning,
