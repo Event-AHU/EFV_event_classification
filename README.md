@@ -1,5 +1,5 @@
 # EFV_event_classification
-[**PRCV-2023**] **Learning Bottleneck Transformer for Event Image-Voxel Feature Fusion based Classification**, Chengguo Yuan, Yu Jin, Zongzhen Wu, Fanting Wei, Yangzirui Wang, Lan Chen, and Xiao Wang. [[arXiv](https://arxiv.org/abs/2308.11937)] [[Paper_with_Code](https://paperswithcode.com/paper/learning-bottleneck-transformer-for-event#code)]
+[**PRCV-2023**] **Learning Bottleneck Transformer for Event Image-Voxel Feature Fusion based Classification**, Chengguo Yuan, Yu Jin, Zongzhen Wu, Fanting Wei, Yangzirui Wang, Lan Chen, and Xiao Wang. [[arXiv](https://arxiv.org/abs/2308.11937)] [[Paper_with_Code](https://paperswithcode.com/paper/learning-bottleneck-transformer-for-event#code)] [[Poster](https://github.com/Event-AHU/EFV_event_classification/blob/main/Poster_EFV_event_classification.pdf)] 
 
 
 ## :dart: Abstract 
