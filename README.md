@@ -7,7 +7,7 @@
 ## Update Log 
 * **Check the source code of EFV++** 
 <p align="left">
-  <img src="https://github.com/Event-AHU/EFV_event_classification/blob/EFVpp/figure/EFVpp_branch.png" alt="EFVpp_branch.png" width="500"/>
+  <img src="https://github.com/Event-AHU/EFV_event_classification/blob/EFVpp/figure/EFVpp_branch.png" alt="EFVpp_branch.png" width="250"/>
 </p>
 
 
