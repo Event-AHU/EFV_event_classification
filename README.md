@@ -6,7 +6,7 @@
 
 ## Update Log 
 * **Check the source code of EFV++** (Journal extension, will release the code soon!!!) 
-<p align="left">
+<p align="center">
   <img src="https://github.com/Event-AHU/EFV_event_classification/blob/EFVpp/figure/EFVpp_branch.png" alt="EFVpp_branch.png" width="300"/>
 </p>
 
