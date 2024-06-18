@@ -12,7 +12,7 @@ In this paper, we propose a novel dual-stream framework for event stream-based p
 
 
 <p align="center">
-  <img width="90%" src="https://github.com/Event-AHU/SAFE_LargeVLM/blob/main/figures/firstIMG.jpg" alt="feature_vis"/>
+  <img width="90%" src="https://github.com/Event-AHU/EFV_event_classification/blob/EFVpp/figure/firstIMG.jpg" alt="feature_vis"/>
 </p> 
 
 
@@ -36,14 +36,14 @@ Matlab
 
 ## :triangular_flag_on_post: Framework 
 <p align="center">
-  <img width="90%" src="https://github.com/Event-AHU/SAFE_LargeVLM/blob/main/figures/framework.jpg" alt="feature_vis"/>
+  <img width="90%" src="https://github.com/Event-AHU/EFV_event_classification/blob/EFVpp/figure/RBE_framework.png" alt="feature_vis"/>
 </p> 
 ## :floppy_disk: Dataset Download and Pre-processing 
 
 ### Bullying10k
 
 ```
- ASL-DVS:https: //www.dropbox.com/sh/ibq0jsicatn7l6r/AACNrNELV56rs1YInMWUs9CAa?dl=0
+ Bullying10k:https:https://www.brain-cog.network/dataset/Bullying10k/
 ```
 
 ### HARDVS
@@ -84,7 +84,7 @@ DropBox (178GB): https://www.dropbox.com/scl/fo/w658kwhfi3qa8naul3eeb/h?rlkey=zj
 
 ## :chart_with_upwards_trend: Experimental Results 
 <p align="center">
-  <img width="90%" src="https://github.com/Event-AHU/SAFE_LargeVLM/blob/main/figures/poker.png" alt="feature_vis"/>
+  <img width="90%" src="https://github.com/Event-AHU/EFV_event_classification/blob/EFVpp/figure/top5.png" alt="feature_vis"/>
 </p> 
 
 ## :newspaper:License
@@ -94,7 +94,7 @@ Code is released for non-commercial and research purposes **only**. For commerci
 ## :icecream:Acknowledgement
 
 Our code is implemented based on 
-<a href="https://github.com/cxh0519/VTB">VTB</a>, 
+<a href="https://github.com/Event-AHU/EFV_event_classification/tree/main">EFV_event_classification</a>, 
 
 ## :pencil2: Citation 
 
