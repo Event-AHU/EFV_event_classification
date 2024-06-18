@@ -38,6 +38,7 @@ Matlab
 <p align="center">
   <img width="90%" src="https://github.com/Event-AHU/EFV_event_classification/blob/EFVpp/figure/RBE_framework.png" alt="feature_vis"/>
 </p> 
+
 ## :floppy_disk: Dataset Download and Pre-processing 
 
 ### Bullying10k
@@ -48,14 +49,14 @@ Matlab
 
 ### HARDVS
 ```
-[Event Images] 链接：https://pan.baidu.com/s/1OhlhOBHY91W2SwE6oWjDwA?pwd=1234 提取码：1234
+Event Images：https://pan.baidu.com/s/1OhlhOBHY91W2SwE6oWjDwA?pwd=1234 提取码：1234
 
-[Compact Event file] 链接：https://pan.baidu.com/s/1iw214Aj5ugN-arhuxjmfOw?pwd=1234 提取码：1234
+Compact Event file：https://pan.baidu.com/s/1iw214Aj5ugN-arhuxjmfOw?pwd=1234 提取码：1234
 ```
 
 ### POKER
 ```
-BaiduYun (178GB): 链接：https://pan.baidu.com/s/1vQnHZUqQ1o58SajvtE-uHw?pwd=AHUE 提取码：AHUE 
+BaiduYun (178GB): https://pan.baidu.com/s/1vQnHZUqQ1o58SajvtE-uHw?pwd=AHUE 提取码：AHUE 
 
 DropBox (178GB): https://www.dropbox.com/scl/fo/w658kwhfi3qa8naul3eeb/h?rlkey=zjn4b69wa1e3mhid8p6hh8v75&dl=0
 ```
