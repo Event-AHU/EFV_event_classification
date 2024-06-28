@@ -101,7 +101,15 @@ Our code is implemented based on
 
 If you think this work contributes to your research, please give us a star :star2: and cite this paper via: 
 ```
-
+@misc{chen2024retainblendexchangequalityaware,
+      title={Retain, Blend, and Exchange: A Quality-aware Spatial-Stereo Fusion Approach for Event Stream Recognition}, 
+      author={Lan Chen and Dong Li and Xiao Wang and Pengpeng Shao and Wei Zhang and Yaowei Wang and Yonghong Tian and Jin Tang},
+      year={2024},
+      eprint={2406.18845},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2406.18845}, 
+}
 ```
 
 If you have any questions about this work, please leave an issue. 
