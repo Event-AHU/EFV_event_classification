@@ -1,7 +1,8 @@
-# Offical PyTorch Implementation of EFV++
+# Official PyTorch Implementation of EFV++
 
 **Retain, Blend, and Exchange: A Quality-aware Spatial-Stereo Fusion Approach for Event Stream Recognition**, 
-Lan Chen, Dong Li, Xiao Wang，Pengpeng Shao, Wei Zhang，Yonghong Tian，Jin Tang 
+Lan Chen, Dong Li, Xiao Wang*, Pengpeng Shao, Wei Zhang, Yaowei Wang, Yonghong Tian, Jin Tang, 
+**IEEE Transactions on Multimedia (TMM) 2025**, arXiv:2406.18845
 [[arXiv](https://arxiv.org/abs/2406.18845)]
 
 
