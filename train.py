@@ -140,7 +140,7 @@ if __name__ == '__main__':
                 label = batch[0].cuda(args.local_rank,non_blocking=True)
                 data_voxel = batch[1].cuda(args.local_rank,non_blocking=True)
                 data_frame = batch[2].cuda(args.local_rank,non_blocking=True)
-                end_point = model(data_voxel)
+                end_point = model(data_voxel, data_frame)
                 # pdb.set_trace()
                 loss = F.nll_loss(end_point, label)
                 pred = end_point.max(1)[1]
@@ -163,7 +163,7 @@ if __name__ == '__main__':
                     label = batch[0].cuda(args.local_rank,non_blocking=True)
                     data_voxel = batch[1].cuda(args.local_rank,non_blocking=True)
                     data_frame = batch[2].cuda(args.local_rank,non_blocking=True)
-                    end_point = model(data_voxel)
+                    end_point = model(data_voxel, data_frame)
                     pred_t = end_point.max(1)[1]
                     total_t += len(label)
                     correct_t += pred_t.eq(label).sum().item()
@@ -184,7 +184,7 @@ if __name__ == '__main__':
             label = batch[0].cuda(args.local_rank,non_blocking=True)
             data_voxel = batch[1].cuda(args.local_rank,non_blocking=True)
             data_frame = batch[2].cuda(args.local_rank,non_blocking=True)
-            end_point = model(data_voxel)
+            end_point = model(data_voxel, data_frame)
             pred = end_point.max(1)[1]
             total += len(label)
             correct += pred.eq(label).sum().item()
