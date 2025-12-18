@@ -17,7 +17,7 @@ import logging
 import sys
 sys.path.append("..")
 from config import Config
-from models.dual_model import Net as dual_model
+from model.dual_model import Net as dual_model
 from datasets.img_voxel_dataset import EV_Gait_3DGraph_Dataset as dual_dataset
 from datasets.spatial_transforms import *
 from datasets.temporal_transforms import *
