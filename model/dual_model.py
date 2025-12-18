@@ -9,7 +9,7 @@ from torch_geometric.nn import GMMConv,global_mean_pool
 import os
 import sys
 import pdb
-from models import torchvision_resnet
+from model import torchvision_resnet
 from timm.models.layers import PatchEmbed, Mlp, DropPath, trunc_normal_, lecun_normal_
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
