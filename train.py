@@ -97,7 +97,9 @@ if __name__ == '__main__':
 
     dataset_factory = dual_dataset
     train_dataset = dataset_factory(
+        # need to modify if switching datasets
         Config.Nmnist_root_dir, mode='train',split='dir',transform=train_data_aug,spatial_transform=trans_train,
+        # Config.ASL_root_dir, mode='train',split='txt',transform=train_data_aug,spatial_transform=trans_train,
          temporal_transform = temporal_transform_train
     )
     num_samples = len(train_dataset)
@@ -107,7 +109,9 @@ if __name__ == '__main__':
     
     test_data_aug = T.Compose([T.Cartesian(cat=False), T.RandomScale([0.999, 1])])
     test_dataset = dataset_factory(
+        # need to modify if switching datasets
         Config.Nmnist_root_dir, mode='test',split='dir',transform=test_data_aug,
+        # Config.ASL_root_dir, mode='test',split='txt',transform=test_data_aug,
         spatial_transform=trans_test, temporal_transform = temporal_transform_test
     )
     
@@ -140,6 +144,7 @@ if __name__ == '__main__':
                 label = batch[0].cuda(args.local_rank,non_blocking=True)
                 data_voxel = batch[1].cuda(args.local_rank,non_blocking=True)
                 data_frame = batch[2].cuda(args.local_rank,non_blocking=True)
+                # end_point = model(data_voxel)
                 end_point = model(data_voxel, data_frame)
                 # pdb.set_trace()
                 loss = F.nll_loss(end_point, label)
@@ -154,7 +159,7 @@ if __name__ == '__main__':
         if dist.get_rank() == 0:
             # logging.info("epoch: {}, train acc is {}, loss is {}".format(epoch, float(correct) / total,total_loss/len(train_loader)))
             print("epoch: {}, train acc is {},loss is {}".format(epoch, float(correct) / total,total_loss/len(train_loader)))
-        if epoch % 10==0:
+        if epoch % 10 ==0:
             model.eval()
             correct_t = 0
             total_t = 0
@@ -194,4 +199,3 @@ if __name__ == '__main__':
             print("test acc is {}".format(float(correct) / total))
             torch.save(model.module.state_dict(), os.path.join(Config.model_dir, 'NMnist_{}_{}_add_neck.pkl'.format(args.type,epoch)))
         # torch.save(model.state_dict(), Config.gcn_model_name.format(epoch))
-
