@@ -32,21 +32,27 @@ class EV_Gait_3DGraph_Dataset(Dataset):
         self.train_test = mode
         self.split = split
         
-        self.branch_v = 'v2g_8_r3_base'
+        self.branch_v = 'v2g_2022_512_8_r2'
+        # self.branch_v = 'voxel2geometric'
         self.labels = []
         self.G_path_list=[]
         if self.split == 'txt':
-            txt_file = os.path.join(self.root,'ASL_cls5_{}.txt'.format(self.train_test))
-
+            txt_file = os.path.join(self.root,'ASL_{}.txt'.format(self.train_test))
             with open(txt_file,'r') as anno_file:
-                while(1):
+                while True: 
                     anno = anno_file.readline()
                     if not anno:
                         break
-                    repath = anno.split(' ')[0]
+                    anno_stripped = anno.strip()
+                    if not anno_stripped:
+                        continue
+                    parts = anno_stripped.split()
+                    if len(parts) < 2:
+                        raise ValueError(f"Annotation line format error: {anno}, split into {len(parts)} fields, at least 2 fields are required!")
+                    repath = parts[0]  
                     cls_name = repath.split(os.sep)[0]
                     file_name =  repath.split(os.sep)[1]+'.pt'
-                    label = anno.split(' ')[2]
+                    label = parts[1]  
                     p_file_path = os.path.join(self.root,self.branch_v,cls_name,file_name)
                     self.labels.append(label)
                     self.G_path_list.append(p_file_path)
@@ -120,5 +126,5 @@ class EV_Gait_3DGraph_Dataset(Dataset):
         pass
     def process(self):
         pass
-    def get():
+    def get(self): 
         pass
